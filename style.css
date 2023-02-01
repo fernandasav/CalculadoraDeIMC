@@ -1,0 +1,84 @@
+:root {
+  --primary-color: rgb(238, 214, 214);
+  --primary-color-darker: rgb(159, 108, 108);
+  --second-color: rgb(156, 139, 139);
+  --second-color-darker: rgb(114, 107, 107);
+  --highlity-color: rgb(90, 210, 210);
+  --positive-color: rgb(98, 127, 71);
+  --negative-color: rgb(105, 17, 17);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background-color: var(--primary-color-darker);
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 20px;
+  font-size: 1.25em;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  padding: 10px;
+  height: 70px;
+  font-size: 1.5em;
+}
+
+form input:focus {
+  outline: 2.5px solid var(--highlity-color);
+}
+
+form button {
+  margin-top: 50px;
+  padding: 5px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  border: solid 1px var(--second-color-darker);
+  background: var(--second-color);
+  cursor: pointer;
+  height: 70px;
+}
+
+form button:hover {
+  background: var(--highlity-color);
+}
+
+.texto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.paragrafo-resultado, .bad {
+  background-color: var(--positive-color);
+  padding: 20px;
+  
+}
+
+.bad {
+  background-color: var(--negative-color);
+}
